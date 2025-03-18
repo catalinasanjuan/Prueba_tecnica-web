@@ -1,6 +1,7 @@
+import { clearScreenDown } from "readline";
 import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
 
-@Entity()
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn("uuid")
   id: string;
